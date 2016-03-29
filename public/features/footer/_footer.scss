@@ -1,0 +1,49 @@
+.myfooter-wrapper {
+    background-color: #010036;
+    height: 120px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: #fff;
+    .myfooter-container {
+        width: 95%;
+        position: relative;
+        height: 60px;
+    }
+    .myfooter-container ul {
+        position: absolute;
+        bottom: -10px;
+        height: 50px;
+        display: inline;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+        ;
+    }
+    .footer-info {
+        position: absolute;
+        bottom: -10px;
+        height: 20px;
+        width: 100%;
+        text-align: center;
+        
+        a {
+            text-decoration: underline;
+        }
+        
+    }
+    li {
+        display: inline;
+        margin-left: 2%;
+    }
+    a {
+        display: inline;
+        color: #fff;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    a:focus {
+        text-decoration: none;
+    }
+}

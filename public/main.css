@@ -1,0 +1,104 @@
+.nav-wrapper {
+  background-color: #010036;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  font-size: 18px; }
+  .nav-wrapper .navbar-container {
+    width: 100%;
+    margin: 0 auto; }
+  .nav-wrapper .navbar-container ul {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    height: 50px; }
+  .nav-wrapper li {
+    color: #fff;
+    display: inline;
+    margin-left: 5%; }
+  .nav-wrapper a {
+    display: inline;
+    color: #fff; }
+  .nav-wrapper a:hover {
+    text-decoration: none; }
+  .nav-wrapper a:focus {
+    text-decoration: none; }
+
+.myfooter-wrapper {
+  background-color: #010036;
+  height: 120px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: #fff; }
+  .myfooter-wrapper .myfooter-container {
+    width: 95%;
+    position: relative;
+    height: 60px; }
+  .myfooter-wrapper .myfooter-container ul {
+    position: absolute;
+    bottom: -10px;
+    height: 50px;
+    display: inline;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center; }
+  .myfooter-wrapper .footer-info {
+    position: absolute;
+    bottom: -10px;
+    height: 20px;
+    width: 100%;
+    text-align: center; }
+    .myfooter-wrapper .footer-info a {
+      text-decoration: underline; }
+  .myfooter-wrapper li {
+    display: inline;
+    margin-left: 2%; }
+  .myfooter-wrapper a {
+    display: inline;
+    color: #fff; }
+  .myfooter-wrapper a:hover {
+    text-decoration: none; }
+  .myfooter-wrapper a:focus {
+    text-decoration: none; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #EEEEEE; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; }
+
+.page-container {
+  min-height: 100%; }
+
+.home-wrapper .jumbotron {
+  text-align: center;
+  min-height: 100%;
+  padding-bottom: 0; }
+
+.home-wrapper hr {
+  color: #000;
+  background-color: #000;
+  height: 1px; }
+
+.home-wrapper .home-button-row {
+  text-align: center; }
+
+.home-wrapper button {
+  width: 400px;
+  height: 200px;
+  background-color: #010036;
+  margin: 25px;
+  color: #fff;
+  font-size: 24px; }
+
+.home-wrapper button:hover {
+  color: #fff;
+  background-color: #003E71; }
+
+.home-wrapper button:focus {
+  color: #fff; }

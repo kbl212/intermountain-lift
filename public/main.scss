@@ -1,3 +1,8 @@
+
+
 $primary-blue: #003E71;
 $primary-white: #F8FEFC;
 
+@import './features/navbar/navbar';
+@import './features/footer/footer';
+@import './features/homePage/home';

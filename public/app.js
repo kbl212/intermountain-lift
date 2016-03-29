@@ -1,7 +1,7 @@
-var app = angular.module('intermountain-lift', [ngRoute]);
+var app = angular.module('intermountain-lift', ['ngRoute']);
 
 
-app.config('$routeProvider', function ($routeProvider) {
+app.config(['$routeProvider', function ($routeProvider) {
 
     $routeProvider
         .when('/home', {
@@ -9,7 +9,7 @@ app.config('$routeProvider', function ($routeProvider) {
             controller: 'homeCtrl'
         })
         .when('/contact', {
-            templateUrl: 'features/contactPage/aboutTmpl.html',
+            templateUrl: 'features/contactPage/contactTmpl.html',
             controller: 'contactCtrl'
         })
         .when('/customers', {
@@ -37,7 +37,10 @@ app.config('$routeProvider', function ($routeProvider) {
             controller: 'equipmentCtrl'
         })
         .when('/work', {
-            templateUrl: 'features/work/allWorkTmpl.html'
+            templateUrl: 'features/allWorkPage/allWorkTmpl.html',
             controller: 'allWorkCtrl'
         })
-});
+        .otherwise({
+            redirectTo: '/home'
+        })
+}]);

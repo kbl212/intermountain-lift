@@ -1,0 +1,39 @@
+.nav-wrapper {
+    background-color: #010036;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    
+    .navbar-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .navbar-container ul {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+    }
+    
+    li {
+        color: #fff;
+        display: inline;
+        margin-left: 5%;
+    }
+    
+    a {
+        display: inline;
+        color: #fff;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    a:focus {
+        text-decoration: none;
+    }
+}
