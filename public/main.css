@@ -117,8 +117,7 @@ body {
     line-height: 30px; }
   .history-wrapper h2 {
     width: 300px;
-    margin: 50px auto 50px auto;
-    text-decoration: underline; }
+    margin: 50px auto 50px auto; }
   .history-wrapper .top-info {
     text-indent: 50px; }
   .history-wrapper #staff-list {
@@ -226,7 +225,9 @@ body {
     margin-right: 5px; }
   .employment-wrapper .job-status {
     color: lawngreen;
-    background-color: #010036; }
+    background-color: #010036;
+    padding: 2px;
+    margin-left: 5px; }
   .employment-wrapper h2 {
     text-align: center;
     margin-top: 50px;
@@ -237,3 +238,9 @@ body {
       display: inline; }
   .employment-wrapper p {
     margin-left: 50px; }
+  .employment-wrapper .employment-other-info {
+    margin-top: 100px;
+    text-align: center; }
+    .employment-wrapper .employment-other-info h2 {
+      margin-top: 0;
+      margin-bottom: 0; }

@@ -6,6 +6,8 @@
     .job-status {
         color: lawngreen;
         background-color: #010036;
+        padding: 2px;
+        margin-left: 5px;
     }
     h2 {
         text-align: center;
@@ -20,5 +22,13 @@
     }
     p {
         margin-left: 50px;
+    }
+    .employment-other-info {
+        margin-top: 100px;
+        h2{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        text-align: center;
     }
 }
