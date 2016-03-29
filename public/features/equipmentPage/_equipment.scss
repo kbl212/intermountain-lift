@@ -8,4 +8,39 @@
     .info-section {
         text-indent: 50px;
     }
+    .equipment-photos-section {
+        width: 100%;
+        text-align:center;
+    }
+    h3 {
+        margin: 50px auto 50px auto;
+        width: 400px;
+    }
+    .photo-thumb {
+        display: inline;
+        img {
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 85px;
+            width: 85px;
+        }
+    }
+    
+    .photo-thumb:hover {
+        cursor: pointer;
+    }
+    
+    .equipment-thumbs {
+        padding-bottom: 10px;
+        border-bottom: 1px dashed #000;
+    }
+    
+    #main-img-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+    .main-equipment-image {
+        margin-bottom: 50px;
+    }
 }

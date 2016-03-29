@@ -168,3 +168,27 @@ body {
     margin: 50px auto 50px auto; }
   .equipment-wrapper .info-section {
     text-indent: 50px; }
+  .equipment-wrapper .equipment-photos-section {
+    width: 100%;
+    text-align: center; }
+  .equipment-wrapper h3 {
+    margin: 50px auto 50px auto;
+    width: 400px; }
+  .equipment-wrapper .photo-thumb {
+    display: inline; }
+    .equipment-wrapper .photo-thumb img {
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 85px;
+      width: 85px; }
+  .equipment-wrapper .photo-thumb:hover {
+    cursor: pointer; }
+  .equipment-wrapper .equipment-thumbs {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #000; }
+  .equipment-wrapper #main-img-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold; }
+  .equipment-wrapper .main-equipment-image {
+    margin-bottom: 50px; }

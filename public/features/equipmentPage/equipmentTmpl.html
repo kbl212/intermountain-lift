@@ -1,13 +1,30 @@
 <div class="equipment-wrapper">
     <div class="container">
-        <h2>Capabilities and Equipment</h2>
-        <div class="info-section">
-            <p>Intermountain Lifts 'Roundo' and 'Williams & White', bending and rolling equipment, can roll pipe or tube up to 24-inch diameters. Beams, tees, channels and angles can be rolled up to 15-inch. The roll and bending machine operators are provided with computerized specifications to form the intricate shapes and sections of roller coaster track and other specialized fabrication projects.</p>
-            <p>Fifteen 5-ton through 45-ton overhead cranes and several smaller jib cranes cover over 70,000 square feet of production floor space and material storage bays. Lifting capacity of this magnitude allows for maximum handling and product flow during the fabrication and finish process.</p>
-            <p>Intermountain Lift has calibrated inverter type welding machines available for welding after the layout and fitting phases have been completed. Other high tech fabrication equipment is also available during the fitting and assembly process.</p>
-            <p>A fully automated ‘Clemco’ steel shot blast and recovery system insures the correct profile specification can be attained prior to final painting. Two 15-ton overhead cranes provide ample lifting capacity in this 7000 square foot facility. (Shop size 67ft. Wide x 50ft. Deep x 27ft. Hook Height)</p>
-            <p>A heated and insulated 6,000 square foot paint facility also insures the optimum conditions for highly technical paint applications. The paint shop is serviced with two overhead cranes, one 10-ton and one 15-ton. The paint and blast / finish shops are connected with an open crane way that allows for easy transfer between the two facilities. (Shop size 47ft. Wide x 130ft. Deep x 18ft. Hook Height)</p>
-            <p>Intermountain Lift has the loading equipment to make sure that your product is in good hands after it has been completed. Our trained and competent handling and loading crew pride themselves on their loading and packaging expertise.</p>
+        <div class="main-equipment-info">
+            <h2>Capabilities and Equipment</h2>
+            <div class="info-section">
+                <p>Intermountain Lifts 'Roundo' and 'Williams & White', bending and rolling equipment, can roll pipe or tube up to 24-inch diameters. Beams, tees, channels and angles can be rolled up to 15-inch. The roll and bending machine operators are provided with computerized specifications to form the intricate shapes and sections of roller coaster track and other specialized fabrication projects.</p>
+                <p>Fifteen 5-ton through 45-ton overhead cranes and several smaller jib cranes cover over 70,000 square feet of production floor space and material storage bays. Lifting capacity of this magnitude allows for maximum handling and product flow during the fabrication and finish process.</p>
+                <p>Intermountain Lift has calibrated inverter type welding machines available for welding after the layout and fitting phases have been completed. Other high tech fabrication equipment is also available during the fitting and assembly process.</p>
+                <p>A fully automated ‘Clemco’ steel shot blast and recovery system insures the correct profile specification can be attained prior to final painting. Two 15-ton overhead cranes provide ample lifting capacity in this 7000 square foot facility. (Shop size 67ft. Wide x 50ft. Deep x 27ft. Hook Height)</p>
+                <p>A heated and insulated 6,000 square foot paint facility also insures the optimum conditions for highly technical paint applications. The paint shop is serviced with two overhead cranes, one 10-ton and one 15-ton. The paint and blast / finish shops are connected with an open crane way that allows for easy transfer between the two facilities. (Shop size 47ft. Wide x 130ft. Deep x 18ft. Hook Height)</p>
+                <p>Intermountain Lift has the loading equipment to make sure that your product is in good hands after it has been completed. Our trained and competent handling and loading crew pride themselves on their loading and packaging expertise.</p>
+            </div>
+        </div>
+        <div class="equipment-photos-section">
+            <div class="equipment-thumbs">
+                <div class="equipment-btn-row">
+                    <button class="btn-primary" ng-click="changeCurrentPhotoType('Bending and Rolling'); showEquipmentObjs()">Bending and Rolling</button>
+                    <button class="btn-primary" ng-click="changeCurrentPhotoType('Crane'); showEquipmentObjs()">Cranes</button>
+                    <button class="btn-primary" ng-click="changeCurrentPhotoType('Loading and Packaging'); showEquipmentObjs()">Loading and Packaging</button>
+                </div>
+                <h3>{{currentPhotoType}} Photos</h3>
+                <li class="photo-thumb" ng-repeat="photo in currentPhotos" ng-click="changeMainImage($index)">
+                    <img ng-src="{{photo.image}}" />
+                </li>
+            </div>
+            </br>
+            <h3 id="main-img-title">{{mainImage.name}}</h3>
+            <img class="main-equipment-image" ng-src="{{mainImage.image}}" </div>
         </div>
     </div>
-</div>
