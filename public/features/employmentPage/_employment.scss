@@ -1,0 +1,24 @@
+.employment-wrapper {
+    line-height: 30px;
+    .fa-square {
+        margin-right: 5px;
+    }
+    .job-status {
+        color: lawngreen;
+        background-color: #010036;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    li {
+        h3 {
+            display: inline;
+        }
+        list-style-type: none;
+    }
+    p {
+        margin-left: 50px;
+    }
+}

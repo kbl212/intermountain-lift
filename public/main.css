@@ -219,3 +219,21 @@ body {
     font-size: 18px;
     list-style-type: none;
     line-height: 30px; }
+
+.employment-wrapper {
+  line-height: 30px; }
+  .employment-wrapper .fa-square {
+    margin-right: 5px; }
+  .employment-wrapper .job-status {
+    color: lawngreen;
+    background-color: #010036; }
+  .employment-wrapper h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .employment-wrapper li {
+    list-style-type: none; }
+    .employment-wrapper li h3 {
+      display: inline; }
+  .employment-wrapper p {
+    margin-left: 50px; }
