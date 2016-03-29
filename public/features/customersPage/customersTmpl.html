@@ -1,0 +1,25 @@
+<div class="customers-wrapper">
+    <div class="container">
+        <h2 id="customers-title">Some of our valued CUSTOMERS and links to their web sites.</h2>
+        <div class="customers-row">
+            <div class="amusement">
+                <h2>Amusement</h2>
+                <li ng-repeat="customer in amusementCustomers">
+                    <i class="fa fa-square"></i><a ng-href="{{customer.link}}" target="_blank">{{customer.name}}</a>
+                </li>
+            </div>
+            <div class="transportation">
+                <h2>Transportation</h2>
+                <li ng-repeat="customer in transportationCustomers">
+                    <i class="fa fa-square"></i><a ng-href="{{customer.link}}" target="_blank">{{customer.name}}</a>
+                </li>
+            </div>
+            <div class="industrial">
+                <h2>Industrial and Commercial</h2>
+                <li ng-repeat="customer in industrialCustomers">
+                    <i class="fa fa-square"></i><a ng-href="{{customer.link}}" target="_blank">{{customer.name}}</a>
+                </li>
+            </div>
+        </div>
+    </div>
+</div>

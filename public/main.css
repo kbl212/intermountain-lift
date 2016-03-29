@@ -1,6 +1,7 @@
 .nav-wrapper {
   background-color: #010036;
   height: 60px;
+  width: 100%;
   position: relative;
   overflow: hidden;
   font-size: 18px; }
@@ -192,3 +193,29 @@ body {
     font-weight: bold; }
   .equipment-wrapper .main-equipment-image {
     margin-bottom: 50px; }
+
+.customers-wrapper {
+  width: 100%; }
+  .customers-wrapper .fa-square {
+    margin-right: 5px; }
+  .customers-wrapper #customers-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .customers-wrapper .customers-row .amusement {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top; }
+  .customers-wrapper .customers-row .transportation {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top; }
+  .customers-wrapper .customers-row .industrial {
+    width: 36%;
+    display: inline-block;
+    vertical-align: top; }
+  .customers-wrapper .customers-row li {
+    font-size: 18px;
+    list-style-type: none;
+    line-height: 30px; }

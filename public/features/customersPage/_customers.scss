@@ -1,0 +1,35 @@
+.customers-wrapper {
+    width: 100%;
+    .fa-square {
+        margin-right: 5px;
+    }
+    #customers-title{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+    .customers-row {
+        .amusement {
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .transportation {
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .industrial {
+            width: 36%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        li {
+            font-size: 18px;
+            list-style-type: none;
+            line-height: 30px;
+        }
+    }
+}
