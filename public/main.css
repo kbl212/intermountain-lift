@@ -80,6 +80,11 @@ body {
   min-height: 100%;
   padding-bottom: 0; }
 
+.home-wrapper h2 {
+  border: 1px dotted #000;
+  width: 600px;
+  margin: 0 auto; }
+
 .home-wrapper hr {
   color: #000;
   background-color: #000;
@@ -102,3 +107,38 @@ body {
 
 .home-wrapper button:focus {
   color: #fff; }
+
+.history-wrapper {
+  position: absolute;
+  width: 100%;
+  font-size: 18px; }
+  .history-wrapper p {
+    line-height: 30px; }
+  .history-wrapper h2 {
+    width: 300px;
+    margin: 50px auto 50px auto;
+    text-decoration: underline; }
+  .history-wrapper #staff-list {
+    width: 500px;
+    margin: 0 auto;
+    font-weight: bold;
+    line-height: 20px; }
+
+.quality-wrapper {
+  font-size: 18px; }
+  .quality-wrapper h2 {
+    margin: 50px auto 50px auto;
+    width: 400px; }
+  .quality-wrapper .img-thumb {
+    height: 75px;
+    width: 75px;
+    border: 1px solid #000;
+    margin-left: 50px; }
+  .quality-wrapper .intermountain-list-title {
+    border-top: 1px dotted #000;
+    padding-top: 10px; }
+  .quality-wrapper .links-section {
+    text-align: left;
+    margin-left: 60px; }
+  .quality-wrapper .fa-square {
+    margin-right: 5px; }

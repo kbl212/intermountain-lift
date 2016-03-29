@@ -1,0 +1,19 @@
+.history-wrapper {
+    position: absolute;
+    width: 100%;
+    font-size: 18px;
+    p {
+        line-height: 30px;
+    }
+    h2 {
+        width: 300px;
+        margin: 50px auto 50px auto;
+        text-decoration: underline;
+    }
+    #staff-list {
+        width: 500px;
+        margin: 0 auto;
+        font-weight: bold;
+        line-height: 20px;
+    }
+}
