@@ -118,6 +118,8 @@ body {
     width: 300px;
     margin: 50px auto 50px auto;
     text-decoration: underline; }
+  .history-wrapper .top-info {
+    text-indent: 50px; }
   .history-wrapper #staff-list {
     width: 500px;
     margin: 0 auto;
@@ -137,8 +139,32 @@ body {
   .quality-wrapper .intermountain-list-title {
     border-top: 1px dotted #000;
     padding-top: 10px; }
+  .quality-wrapper .info-section {
+    line-height: 30px; }
+    .quality-wrapper .info-section p {
+      text-indent: 50px; }
   .quality-wrapper .links-section {
     text-align: left;
     margin-left: 60px; }
   .quality-wrapper .fa-square {
     margin-right: 5px; }
+
+.facilities-wrapper {
+  font-size: 18px;
+  line-height: 30px; }
+  .facilities-wrapper p {
+    text-indent: 50px; }
+  .facilities-wrapper h2 {
+    margin: 50px auto 50px auto;
+    width: 200px; }
+  .facilities-wrapper img {
+    width: 98%; }
+
+.equipment-wrapper {
+  font-size: 18px;
+  line-height: 30px; }
+  .equipment-wrapper h2 {
+    width: 400px;
+    margin: 50px auto 50px auto; }
+  .equipment-wrapper .info-section {
+    text-indent: 50px; }
