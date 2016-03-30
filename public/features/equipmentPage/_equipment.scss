@@ -54,4 +54,11 @@
         margin-bottom: 50px;
         border: 1px solid #010036;
     }
+    .equip-button:focus {
+        background-color: #010036;
+    }
+}
+
+.active-equipment {
+    background-color: #010036;
 }

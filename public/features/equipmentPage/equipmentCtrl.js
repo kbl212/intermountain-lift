@@ -87,14 +87,24 @@ app.controller('equipmentCtrl', function ($scope) {
             for (var i = 0; i < bendingPics.length; i++) {
                 $scope.currentPhotos.push(bendingPics[i]);
             }
+            //Used to change which button looks active.
+            $scope.bendingSelect = "active-equipment";
+            $scope.cranesSelect = "inactive-equipment";
+            $scope.loadingSelect = "inactive-equipment";
         } else if ($scope.currentPhotoType === 'Crane') {
             for (var i = 0; i < cranePics.length; i++) {
                 $scope.currentPhotos.push(cranePics[i]);
             }
+            $scope.bendingSelect = "inactive-equipment";
+            $scope.cranesSelect = "active-equipment";
+            $scope.loadingSelect = "inactive-equipment";
         } else if ($scope.currentPhotoType === 'Loading and Packaging') {
             for (var i = 0; i < loadingPics.length; i++) {
                 $scope.currentPhotos.push(loadingPics[i]);
             }
+            $scope.bendingSelect = "inactive-equipment";
+            $scope.cranesSelect = "inactive-equipment";
+            $scope.loadingSelect = "active-equipment";
         }
         $scope.mainImage = $scope.currentPhotos[0];
     }

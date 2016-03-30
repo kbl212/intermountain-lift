@@ -216,6 +216,11 @@ body {
   .equipment-wrapper .main-equipment-image {
     margin-bottom: 50px;
     border: 1px solid #010036; }
+  .equipment-wrapper .equip-button:focus {
+    background-color: #010036; }
+
+.active-equipment {
+  background-color: #010036; }
 
 .customers-wrapper {
   width: 100%; }
@@ -298,6 +303,8 @@ body {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2); }
+  .all-work-wrapper .work-button:focus {
+    background-color: #010036; }
   .all-work-wrapper .button-row {
     text-align: center; }
   .all-work-wrapper .work-button {
@@ -311,3 +318,6 @@ body {
     margin-bottom: 50px; }
   .all-work-wrapper span {
     font-weight: bold; }
+
+.active-work {
+  background-color: #010036; }

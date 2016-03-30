@@ -346,6 +346,10 @@ app.controller('allWorkCtrl', function ($scope, allWorkService) {
             }
             $scope.currDescription = $scope.amusementDescription;
             $scope.currTitle = 'Amusement';
+            //Used to change which button looks active.
+            $scope.amusementSelect = "active-work";
+            $scope.transportationSelect = "inactive-work";
+            $scope.industrialSelect = "inactive-work";
         } 
         else if ($scope.currWorkType === 'Transportation') {
             for (var i = 0; i < $scope.transportations.length; i++) {
@@ -353,6 +357,10 @@ app.controller('allWorkCtrl', function ($scope, allWorkService) {
             }
             $scope.currDescription = $scope.transportationDescription;
             $scope.currTitle = 'Transportation';
+            
+            $scope.amusementSelect = "inactive-work";
+            $scope.transportationSelect = "active-work";
+            $scope.industrialSelect = "inactive-work";
         }
         else if ($scope.currWorkType === 'Industrial') {
             for (var i = 0; i < $scope.industrials.length; i++) {
@@ -360,6 +368,10 @@ app.controller('allWorkCtrl', function ($scope, allWorkService) {
             }
             $scope.currDescription = $scope.industrialDescription;
             $scope.currTitle = 'Industrial and Commercial';
+            
+            $scope.amusementSelect = "inactive-work";
+            $scope.transportationSelect = "inactive-work";
+            $scope.industrialSelect = "active-work";
         }
         $scope.currPhoto = $scope.currWorkArray[0];
     }
