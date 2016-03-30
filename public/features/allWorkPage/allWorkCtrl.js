@@ -360,7 +360,12 @@ app.controller('allWorkCtrl', function ($scope, allWorkService) {
             }
             $scope.currDescription = $scope.industrialDescription;
             $scope.currTitle = 'Industrial and Commercial';
-        } 
+        }
+        $scope.currPhoto = $scope.currWorkArray[0];
+    }
+    
+    $scope.changeCurrPhoto = function(indexIn) {
+        $scope.currPhoto = $scope.currWorkArray[indexIn];
     }
 
     $scope.loadWorkPics();

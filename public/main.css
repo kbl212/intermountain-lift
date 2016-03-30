@@ -7,17 +7,19 @@
   font-size: 18px; }
   .nav-wrapper .navbar-container {
     width: 100%;
-    margin: 0 auto; }
+    text-align: center; }
   .nav-wrapper .navbar-container ul {
     position: absolute;
     top: 50%;
     text-align: center;
     width: 100%;
-    height: 50px; }
+    height: 50px;
+    margin-top: -10px; }
   .nav-wrapper li {
     color: #fff;
     display: inline;
-    margin-left: 5%; }
+    margin-left: 2.5%;
+    margin-right: 2.5%; }
   .nav-wrapper a {
     display: inline;
     color: #fff; }
@@ -76,13 +78,16 @@ body {
 .page-container {
   min-height: 100%; }
 
+.home-wrapper #now-hiring {
+  padding: 5px; }
+
 .home-wrapper .jumbotron {
   text-align: center;
   min-height: 100%;
   padding-bottom: 0; }
 
 .home-wrapper h2 {
-  border: 1px dotted #000;
+  border: 1px dotted #010036;
   width: 600px;
   margin: 0 auto; }
 
@@ -170,10 +175,13 @@ body {
     text-indent: 50px; }
   .equipment-wrapper .equipment-photos-section {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin-top: 50px; }
   .equipment-wrapper h3 {
-    margin: 50px auto 50px auto;
-    width: 400px; }
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center; }
   .equipment-wrapper .photo-thumb {
     display: inline; }
     .equipment-wrapper .photo-thumb img {
@@ -183,15 +191,24 @@ body {
       width: 85px; }
   .equipment-wrapper .photo-thumb:hover {
     cursor: pointer; }
+  .equipment-wrapper .one-thumb {
+    transition: all 0.01s; }
+  .equipment-wrapper .one-thumb:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    filter: blur(0);
+    -webkit-filter: blur(0); }
   .equipment-wrapper .equipment-thumbs {
     padding-bottom: 10px;
-    border-bottom: 1px dashed #000; }
+    border-bottom: 1px dotted #000; }
   .equipment-wrapper #main-img-title {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: bold; }
   .equipment-wrapper .main-equipment-image {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    border: 1px solid #010036; }
 
 .customers-wrapper {
   width: 100%; }
@@ -245,3 +262,41 @@ body {
     .employment-wrapper .employment-other-info h2 {
       margin-top: 0;
       margin-bottom: 0; }
+
+.all-work-wrapper {
+  font-size: 18px;
+  line-height: 30px; }
+  .all-work-wrapper h2 {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center; }
+  .all-work-wrapper p {
+    text-indent: 50px; }
+  .all-work-wrapper li {
+    list-style-type: none;
+    display: inline-block; }
+  .all-work-wrapper .work-body {
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px dotted #000; }
+  .all-work-wrapper .all-work-thumb {
+    height: 85px;
+    width: 85px;
+    margin: 2px;
+    transition: all 0.01s; }
+  .all-work-wrapper .all-work-thumb:hover {
+    cursor: pointer;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+  .all-work-wrapper .main-image {
+    border: 1px solid #010036; }
+  .all-work-wrapper .main-photo-info {
+    padding-top: 25px;
+    text-align: center;
+    margin-bottom: 50px; }
+  .all-work-wrapper span {
+    font-weight: bold; }

@@ -96,7 +96,6 @@ app.controller('equipmentCtrl', function ($scope) {
                 $scope.currentPhotos.push(loadingPics[i]);
             }
         }
-        console.log($scope.currentPhotos);
         $scope.mainImage = $scope.currentPhotos[0];
     }
     

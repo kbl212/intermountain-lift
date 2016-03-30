@@ -10,11 +10,14 @@
     }
     .equipment-photos-section {
         width: 100%;
-        text-align:center;
+        text-align: center;
+        margin-top: 50px;
     }
     h3 {
-        margin: 50px auto 50px auto;
-        width: 400px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+        text-align: center;
     }
     .photo-thumb {
         display: inline;
@@ -25,16 +28,23 @@
             width: 85px;
         }
     }
-    
     .photo-thumb:hover {
         cursor: pointer;
     }
-    
+    .one-thumb {
+        transition: all 0.01s;
+    }
+    .one-thumb:hover {
+        -webkit-transform: scale(1.20);
+        -ms-transform: scale(1.20);
+        transform: scale(1.20);
+        filter: blur(0);
+        -webkit-filter: blur(0);
+    }
     .equipment-thumbs {
         padding-bottom: 10px;
-        border-bottom: 1px dashed #000;
+        border-bottom: 1px dotted #000;
     }
-    
     #main-img-title {
         margin-top: 0;
         margin-bottom: 0;
@@ -42,5 +52,6 @@
     }
     .main-equipment-image {
         margin-bottom: 50px;
+        border: 1px solid #010036;
     }
 }

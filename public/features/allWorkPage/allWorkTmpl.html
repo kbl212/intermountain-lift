@@ -3,10 +3,21 @@
         <div class="work-head">
             <h2>{{currTitle}}</h2>
             <p>{{currDescription}}</p>
-            <br>
+            </br>
         </div>
         <div class="work-body">
-            <li ng-repeat="photo in currWorkArray"><img ng-src="{{photo.image}}"/></li>
+            <li ng-repeat="photo in currWorkArray" ng-click="changeCurrPhoto($index)"><img class="all-work-thumb" ng-src="{{photo.image}}" /></li>
+        </div>
+        <div class="main-photo-info">
+            <img class="main-image" ng-src="{{currPhoto.image}}" />
+            </br>
+            "{{currPhoto.title}}"
+            </br>
+            {{currPhoto.placeName}}
+            </br>
+            {{currPhoto.location}}
+            </br>
+            <span>{{currPhoto.company}}<span>
         </div>
     </div>
 </div>
