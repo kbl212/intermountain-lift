@@ -217,12 +217,13 @@ body {
   .customers-wrapper .customers-row li {
     font-size: 18px;
     list-style-type: none;
-    line-height: 30px; }
+    line-height: 40px; }
 
 .employment-wrapper {
   line-height: 30px; }
   .employment-wrapper .fa-square {
-    margin-right: 5px; }
+    margin-right: 5px;
+    padding-bottom: 20px; }
   .employment-wrapper .job-status {
     color: lawngreen;
     background-color: #010036;

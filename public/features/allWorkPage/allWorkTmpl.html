@@ -1,0 +1,12 @@
+<div class="all-work-wrapper">
+    <div class="container">
+        <div class="work-head">
+            <h2>{{currTitle}}</h2>
+            <p>{{currDescription}}</p>
+            <br>
+        </div>
+        <div class="work-body">
+            <li ng-repeat="photo in currWorkArray"><img ng-src="{{photo.image}}"/></li>
+        </div>
+    </div>
+</div>
