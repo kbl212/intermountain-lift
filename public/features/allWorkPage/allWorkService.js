@@ -10,7 +10,6 @@ app.service('allWorkService', function() {
         if (!this.currWorkType) {
             this.currWorkType = 'Amusement';
         }
-        console.log("okay...", this.currWorkType)
         return this.currWorkType;
     }
 });

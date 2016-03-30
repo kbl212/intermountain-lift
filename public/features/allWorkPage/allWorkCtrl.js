@@ -9,6 +9,10 @@ app.controller('allWorkCtrl', function ($scope, allWorkService) {
     $scope.retrieveWorkType();
 
     $scope.amusementDescription = "As amusement rides continue to become more sophisticated and more technical, designs demand a greater amount of highly complex production. Intermountain Lift understands the dynamic nature of this specialized field. Years of experience in producing amusement ride steel construction enable intermountain lift to work with engineers to build the safest, most precise structures possible. Take a look.";
+    
+    $scope.transportationDescription = "Transit vehicle steel fabrication is another area in which Intermountain Lift excels. Working with many of the nation's leading transit manufacturing companies, Intermountain Lift has produced numerous steel composite structures, chassis, and undercarriages. Our commitment to meeting rigid standards has earned us a reputation as a leader in the industry. Take a look."
+    
+    $scope.industrialDescription = "Intermountain Lift also has experience in producing a wide variety of specialized projects. From manufacturing cranes to pollution control systems, Intermountain Lift has successfully produced specialized steel and alloy metal structures to the highest specifications for a number of industries. Take a look."
 
     $scope.amusements = [
         {
@@ -93,14 +97,14 @@ app.controller('allWorkCtrl', function ($scope, allWorkService) {
             placeName: "San Antonio, Texas",
             location: '"Scream" / Tripod (background) - S&S POWER INC.',
             company: '"Poltergiest" (foreground) - PREMIER RIDES INC.',
-            image: "../../images/allamusements/SSFT_poltergeist.jpg"
+            image: "../../images/allamusements/SSFT_poltergiest.jpg"
         },
         {
             title: "Poltergeist",
             placeName: "Six Flags Fiesta Texas",
             location: "San Antonio, Texas",
             company: "PREMIER RIDES INC.",
-            image: "../../images/allamusements/SSFT_poltergeist1.jpg"
+            image: "../../images/allamusements/SSFT_poltergiest1.jpg"
         },
         {
             title: "Jokers Jinx",
@@ -188,7 +192,36 @@ app.controller('allWorkCtrl', function ($scope, allWorkService) {
         }
 
     ];
-    $scope.transportations = [];
+    $scope.transportations = [
+        {
+            title: "People Mover",
+            placeName: "Cincinnati Airport",
+            location: "Cincinnati, Ohio",
+            company: "OTIS ELEVATOR CO.",
+            image: "../../images/alltransportations/airport.jpg"
+        },
+        {
+            title: "People Mover",
+            placeName: "Universal Studios",
+            location: "Orlando, Florida",
+            company: "ARROW DYNAMICS INC.",
+            image: "../../images/alltransportations/universal.jpg"
+        },
+        {
+            title: "People Mover Undercarriage",
+            placeName: "Getty Museum",
+            location: "Santa Monica, California",
+            company: "AEROTRANS",
+            image: "../../images/alltransportations/undercarriage.jpg"
+        },
+        {
+            title: "People Mover",
+            placeName: "Getty Museum",
+            location: "Orlando, Florida",
+            company: "AEROTRANS",
+            image: "../../images/alltransportations/getty.jpg"
+        }
+    ];
     $scope.industrials = [];
     $scope.currWorkArray = [];
     
@@ -200,9 +233,21 @@ app.controller('allWorkCtrl', function ($scope, allWorkService) {
             }
             $scope.currDescription = $scope.amusementDescription;
             $scope.currTitle = 'Amusement';
-        } else {
-            console.log("error in $scope.loadWorkPics maybe?");
+        } 
+        else if ($scope.currWorkType === 'Transportation') {
+            for (var i = 0; i < $scope.transportations.length; i++) {
+                $scope.currWorkArray.push($scope.transportations[i]);
+            }
+            $scope.currDescription = $scope.transportationDescription;
+            $scope.currTitle = 'Transportation';
         }
+        else if ($scope.currWorkType === 'Industrial') {
+            for (var i = 0; i < $scope.industrials.length; i++) {
+                $scope.currWorkArray.push($scope.industrials[i]);
+            }
+            $scope.currDescription = $scope.industrialDescription;
+            $scope.currTitle = 'Industrial and Commercial';
+        } 
     }
 
     $scope.loadWorkPics();
