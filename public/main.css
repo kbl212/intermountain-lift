@@ -20,6 +20,10 @@
     display: inline;
     margin-left: 2.5%;
     margin-right: 2.5%; }
+  .nav-wrapper img {
+    height: 40px;
+    width: 200px;
+    margin-top: -10px; }
   .nav-wrapper a {
     display: inline;
     color: #fff; }
@@ -74,6 +78,9 @@ html, body {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px; }
+
+.btn {
+  border: 1px solid #000; }
 
 .page-container {
   min-height: 100%; }
@@ -239,8 +246,7 @@ body {
 .employment-wrapper {
   line-height: 30px; }
   .employment-wrapper .fa-square {
-    margin-right: 5px;
-    padding-bottom: 20px; }
+    margin-right: 5px; }
   .employment-wrapper .job-status {
     color: lawngreen;
     background-color: #010036;
@@ -268,7 +274,7 @@ body {
   line-height: 30px; }
   .all-work-wrapper h2 {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
     text-align: center; }
   .all-work-wrapper p {
@@ -292,6 +298,11 @@ body {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2); }
+  .all-work-wrapper .button-row {
+    text-align: center; }
+  .all-work-wrapper .work-button {
+    color: #fff;
+    margin-top: 40px; }
   .all-work-wrapper .main-image {
     border: 1px solid #010036; }
   .all-work-wrapper .main-photo-info {

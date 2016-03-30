@@ -3,7 +3,7 @@
     line-height: 30px;
     h2 {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 10px;
         margin-bottom: 50px;
         text-align: center;
     }
@@ -32,6 +32,15 @@
         -webkit-transform: scale(1.20);
         -ms-transform: scale(1.20);
         transform: scale(1.20);
+    }
+    
+    .button-row {
+        text-align: center;
+    }
+    
+    .work-button {
+        color: #fff;
+        margin-top: 40px;
     }
     
     .main-image {

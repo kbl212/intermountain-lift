@@ -1,5 +1,10 @@
 <div class="all-work-wrapper">
     <div class="container">
+        <div class ="button-row">
+            <button class="btn btn-primary work-button" ng-click="changeCurrWorkType('Amusement'); loadWorkPics()">Amusement</button>
+            <button class="btn btn-primary work-button" ng-click="changeCurrWorkType('Transportation'); loadWorkPics()">Transportation</button>
+            <button class="btn btn-primary work-button" ng-click="changeCurrWorkType('Industrial'); loadWorkPics()">Industrial and Commercial</button>
+        </div>
         <div class="work-head">
             <h2>{{currTitle}}</h2>
             <p>{{currDescription}}</p>

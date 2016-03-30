@@ -367,6 +367,9 @@ app.controller('allWorkCtrl', function ($scope, allWorkService) {
     $scope.changeCurrPhoto = function(indexIn) {
         $scope.currPhoto = $scope.currWorkArray[indexIn];
     }
-
+    $scope.changeCurrWorkType = function(typeIn) {
+        $scope.currWorkArray = [];
+        $scope.currWorkType = typeIn;
+    }
     $scope.loadWorkPics();
 });

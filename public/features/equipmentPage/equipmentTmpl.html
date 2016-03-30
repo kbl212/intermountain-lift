@@ -14,9 +14,9 @@
         <div class="equipment-photos-section">
             <div class="equipment-thumbs">
                 <div class="equipment-btn-row">
-                    <button class="btn-primary" ng-click="changeCurrentPhotoType('Bending and Rolling'); showEquipmentObjs()">Bending and Rolling</button>
-                    <button class="btn-primary" ng-click="changeCurrentPhotoType('Crane'); showEquipmentObjs()">Cranes</button>
-                    <button class="btn-primary" ng-click="changeCurrentPhotoType('Loading and Packaging'); showEquipmentObjs()">Loading and Packaging</button>
+                    <button class="btn btn-primary" ng-click="changeCurrentPhotoType('Bending and Rolling'); showEquipmentObjs()">Bending and Rolling</button>
+                    <button class="btn btn-primary" ng-click="changeCurrentPhotoType('Crane'); showEquipmentObjs()">Cranes</button>
+                    <button class="btn btn-primary" ng-click="changeCurrentPhotoType('Loading and Packaging'); showEquipmentObjs()">Loading and Packaging</button>
                 </div>
                 <h3>{{currentPhotoType}} Photos</h3>
                 <li class="photo-thumb" ng-repeat="photo in currentPhotos" ng-click="changeMainImage($index)">
