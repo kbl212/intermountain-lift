@@ -222,7 +222,120 @@ app.controller('allWorkCtrl', function ($scope, allWorkService) {
             image: "../../images/alltransportations/getty.jpg"
         }
     ];
-    $scope.industrials = [];
+    $scope.industrials = [
+        {
+            title: "MGM Gardern Wall",
+            placeName: "Architectural Steel",
+            location: "City Center Las Vegas, NV",
+            company: "SME STEEL INC.",
+            image: "../../images/allindustrials/citycenter365.jpg"
+        },
+        {
+            title: "MGM Gardern Wall",
+            placeName: "Architectural Steel",
+            location: "City Center Las Vegas, NV",
+            company: "SME STEEL INC.",
+            image: "../../images/allindustrials/citycenter366.jpg"
+        },
+        {
+            title: "MGM Gardern Wall",
+            placeName: "Architectural Steel",
+            location: "City Center Las Vegas, NV",
+            company: "SME STEEL INC.",
+            image: "../../images/allindustrials/citycenter367.jpg"
+        },
+        {
+            title: "MGM Gardern Wall",
+            placeName: "Architectural Steel",
+            location: "City Center Las Vegas, NV",
+            company: "SME STEEL INC.",
+            image: "../../images/allindustrials/citycenter368.jpg"
+        },
+        {
+            title: "Precipitator",
+            placeName: "Monsanto",
+            location: "Idaho Springs, ID",
+            company: "MONSANTO CO.",
+            image: "../../images/allindustrials/Precipitator-1.jpg"
+        },
+        {
+            title: "Precipitator",
+            placeName: "Monsanto",
+            location: "Idaho Springs, ID",
+            company: "MONSANTO CO.",
+            image: "../../images/allindustrials/Precipitator-2.jpg"
+        },
+        {
+            title: "Harmon Building Canopy",
+            placeName: "Architectural Steel",
+            location: "City Center Las Vegas NV",
+            company: "SME STEEL INC.",
+            image: "../../images/allindustrials/harmon1.jpg"
+        },
+        {
+            title: "Decorative Monorail Enclosure",
+            placeName: "Disneyland",
+            location: "Anaheim, California",
+            company: "SCHUFF STEEL COMPANY",
+            image: "../../images/allindustrials/disneyland1.jpg"
+        },
+        {
+            title: "Stainless Steel Scrub Tanks & Venturies",
+            placeName: "",
+            location: "Green River, Wyoming",
+            company: "FMC CORPORATION",
+            image: "../../images/allindustrials/fmc.jpg"
+        },
+        {
+            title: "Stainless Steel Venturie",
+            placeName: "",
+            location: "Green River, Wyoming",
+            company: "FMC CORPORATION",
+            image: "../../images/allindustrials/ssventurie.jpg"
+        },
+        {
+            title: "Dust Collectors",
+            placeName: "Tampella Power",
+            location: "Sunnyside, Utah",
+            company: "AMEREX, INC.",
+            image: "../../images/allindustrials/tampella.jpg",
+        },
+        {
+            title: "Gantry Craneway",
+            placeName: "",
+            location: "Vineyard, Utah",
+            company: "",
+            image: "../../images/allindustrials/geneva.jpg"
+        },
+        {
+            title: "Arch",
+            placeName: "",
+            location: "",
+            company: "S&S POWER INC.",
+            image: "../../images/allindustrials/arch.jpg"
+        },
+        {
+            title: "Control Pulpit",
+            placeName: "",
+            location: "",
+            company: "NUCOR STEEL",
+            image: "../../images/allindustrials/controlpulpit.jpg"
+        },
+        {
+            title: "Crane Trolly",
+            placeName: "",
+            location: "",
+            company: "US STEEL",
+            image: "../../images/allindustrials/cranetrolly.jpg"
+        },
+        {
+            title: "Swing Arm",
+            placeName: "Laddle Mover",
+            location: "",
+            company: "PACIFIC STATES CAST IRON",
+            image: "../../images/allindustrials/swingarm.jpg"
+        }
+    ];
     $scope.currWorkArray = [];
     
 
