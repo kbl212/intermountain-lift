@@ -1,58 +1,63 @@
 .contact-wrapper {
     font-size: 18px;
     line-height: 30px;
-    
     h2 {
         width: 100%;
         text-align: center;
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    
     h3 {
         width: 100%;
         text-align: center;
         text-decoration: underline;
+        clear: both;
     }
-    
     p {
         width: 400px;
         margin: 0 auto;
     }
     #map {
         height: 270px;
-        width: 35%;
-        display:inline-block;
+        width: 100%;
+        display: inline-block;
         margin-right: 4%;
         margin-top: 20px;
     }
     .company-address {
         vertical-align: top;
         width: 30%;
-        display:inline-block;
-        
+        display: inline-block;
+        float: left;
+        margin-left: 25%;
         h3 {
             text-align: left;
         }
     }
+    .email-form {
+        clear: both;
+        margin-top: 50px;
+    }
     .sales-and-inquiry {
         vertical-align: top;
         width: 30%;
-        display:inline-block;
-        
+        display: inline-block;
+        float: right;
+        margin-right: 15%;
         h3 {
             text-align: left;
         }
     }
     form {
+        clear: both;
         width: 100%;
         text-align: center;
         margin-bottom: 50px;
     }
     button {
-        width: 500px;
+        margin: 10px auto 10px auto;
+        width: 300px;
         display: block;
-        margin: 0 auto 0 305px;
         font-weight: bold;
     }
     input {
@@ -81,22 +86,47 @@
 }
 
 //----------------MEDIA QUERIES-------------------------
-
-@media screen and (max-width:1250px) {
+@media screen and (max-width:1230px) {
     .contact-wrapper {
-        .sales-and-inquiry {
-            width: 700px;
-            margin: 0 auto;
+        p {
+            text-indent: 0;
         }
+        button {
+            margin: 0 0 0 13.3%;
+        }
+    }
+}
+
+@media screen and (max-width:1060px) {
+    .contact-wrapper {
         .company-address {
-            width: 700px;
+            display:block;
+            float:none;
             margin: 0 auto;
+            width: 90%;
+            text-align: center;
+            h3 {
+                text-align: center;
+            }
         }
-        .address-row {
-            width: 500px;
+        .sales-and-inquiry {
+            display:block;
+            float:none;
+            margin: 0 auto;
+            width: 90%;
+            text-align: center;
+            h3 {
+                text-align: center;
+            }
         }
-        #map {
-            width: 300px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contact-wrapper {
+        input, textarea {
+            max-width: 80%;
+            min-width: 320px;
         }
     }
 }

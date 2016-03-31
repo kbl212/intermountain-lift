@@ -5,19 +5,17 @@
             <div id="map"></div>
             <div class="company-address">
                 <h3>Address</h3>
-                <br>
                 <p>Intermountain Lift, Inc.
                     <br> 1990 S. State
                     <br> P.O. Box 686
                     <br> Springville, UT, 84663
-                    <br> Phone: (801) 489-3652
-                    <br> Fax: (801) 489-3652
-                    <br> Toll Free: (855) 489-3652
+                    <br> <strong>Phone: (801) 489-3652</strong>
+                    <br> <strong>Fax: (801) 489-3652</strong>
+                    <br> <strong>Toll Free: (855) 489-3652</strong>
                 </p>
             </div>
             <div class="sales-and-inquiry">
                 <h3>Sales or Inquiry Information</h3>
-                <br>
                 <p>Ray Crandall / CEO
                     <br> Valora Crandall / PR / Secretary
                     <br> Bret Crandall / President - General Manager
@@ -25,19 +23,23 @@
                 </p>
             </div>
         </div>
-        <br>
-        <h3>Email Us</h3>
-        <br>
-        <form>
-            <input type="text" placeholder="Your name" ng-model="emailName"><i class="fa fa-times" ng-show="!emailName"></i><i class="fa fa-check-circle" ng-show="emailName"></i><br>
-            
-            <input type="email" placeholder="Your email address" ng-model="emailAddress" ng-keyup="isEmail(emailAddress)"><i class="fa fa-times" ng-show="!isValidEmail"></i><i class="fa fa-check-circle" ng-show="isValidEmail"></i>
-<br>
-            <input type="text" placeholder="Subject" ng-model="emailSubject"><i class="fa fa-times" ng-show="!emailSubject"></i><i class="fa fa-check-circle" ng-show="emailSubject"></i>
-<br>
-            <textarea id="message-box" type="text" placeholder="Message" ng-model="emailMessage"></textarea><i class="fa fa-times" ng-show="!emailMessage"></i><i class="fa fa-check-circle" ng-show="emailMessage"></i>
-<br>
-            <button type="submit" ng-click="emailSubmit()">Submit</button>
-        </form>
+
+        <div class="email-form">
+            <h3 id="emailus-title"><br><br>Email Us</h3>
+            <form>
+                <input type="text" placeholder="Your name" ng-model="emailName"><i class="fa fa-times" ng-show="!emailName"></i><i class="fa fa-check-circle" ng-show="emailName"></i>
+                <br>
+
+                <input type="email" placeholder="Your email address" ng-model="emailAddress" ng-keyup="isEmail(emailAddress)"><i class="fa fa-times" ng-show="!isValidEmail"></i><i class="fa fa-check-circle" ng-show="isValidEmail"></i>
+                <br>
+                <input type="text" placeholder="Subject" ng-model="emailSubject"><i class="fa fa-times" ng-show="!emailSubject"></i><i class="fa fa-check-circle" ng-show="emailSubject"></i>
+                <br>
+                <textarea id="message-box" type="text" placeholder="Message" ng-model="emailMessage"></textarea><i class="fa fa-times" ng-show="!emailMessage"></i><i class="fa fa-check-circle" ng-show="emailMessage"></i>
+                <br>
+                <p>
+                    <button type="submit" ng-click="emailSubmit()">Submit</button>
+                </p>
+            </form>
+        </div>
     </div>
 </div>

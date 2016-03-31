@@ -42,5 +42,10 @@ app.controller('contactCtrl', function ($scope) {
         else {
             alert("Please fill out all required fields");
         }
+        $scope.emailName="";
+        $scope.emailAddress="";
+        $scope.emailSubject="";
+        $scope.emailMessage="";
+        $scope.isValidEmail = false;
     }
 });
