@@ -1,6 +1,6 @@
 <div class="all-work-wrapper">
     <div class="container">
-        <div class ="button-row">
+        <div class="button-row">
             <button class="btn btn-primary work-button" ng-click="changeCurrWorkType('Amusement'); loadWorkPics()" ng-class="amusementSelect">Amusement</button>
             <button class="btn btn-primary work-button" ng-click="changeCurrWorkType('Transportation'); loadWorkPics()" ng-class="transportationSelect">Transportation</button>
             <button class="btn btn-primary work-button" ng-click="changeCurrWorkType('Industrial'); loadWorkPics()" ng-class="industrialSelect">Industrial and Commercial</button>
@@ -10,19 +10,22 @@
             <p>{{currDescription}}</p>
             </br>
         </div>
-        <div class="work-body">
-            <li ng-repeat="photo in currWorkArray" ng-click="changeCurrPhoto($index)"><img class="all-work-thumb" ng-src="{{photo.image}}" /></li>
-        </div>
-        <div class="main-photo-info">
-            <img class="main-image" ng-src="{{currPhoto.image}}" />
-            </br>
-            "{{currPhoto.title}}"
-            </br>
-            {{currPhoto.placeName}}
-            </br>
-            {{currPhoto.location}}
-            </br>
-            <span>{{currPhoto.company}}<span>
+        <div class="all-photos">
+            <div class="work-body">
+                <li ng-repeat="photo in currWorkArray" ng-click="changeCurrPhoto($index)"><img class="all-work-thumb" ng-src="{{photo.image}}" /></li>
+            </div>
+            <div class="main-photo-info">
+                <img class="main-image" ng-src="{{currPhoto.image}}" />
+                </br>
+                </br>
+                "{{currPhoto.title}}"
+                </br>
+                {{currPhoto.placeName}}
+                </br>
+                {{currPhoto.location}}
+                </br>
+                <span>{{currPhoto.company}}</span>
+            </div>
         </div>
     </div>
 </div>

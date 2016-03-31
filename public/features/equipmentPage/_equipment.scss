@@ -53,6 +53,9 @@
     .main-equipment-image {
         margin-bottom: 50px;
         border: 1px solid #010036;
+        -moz-box-shadow: 10px 10px 5px #888;
+        -webkit-box-shadow: 10px 10px 5px #888;
+        box-shadow: 8px 8px 8px #b6b6b6;
     }
     .equip-button:focus {
         background-color: #010036;

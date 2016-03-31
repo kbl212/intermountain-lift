@@ -17,7 +17,9 @@
     .work-body {
         text-align: center;
         padding-bottom: 25px;
-        border-bottom: 1px dotted #000;
+        display:inline-block;
+        width: 45%;
+        vertical-align: top;
     }
     .all-work-thumb {
         height: 85px;
@@ -33,28 +35,29 @@
         -ms-transform: scale(1.20);
         transform: scale(1.20);
     }
-    
     .work-button:focus {
         background-color: #010036;
     }
-    
     .button-row {
         text-align: center;
     }
-    
     .work-button {
         color: #fff;
         margin-top: 40px;
     }
-    
     .main-image {
         border: 1px solid #010036;
+        -moz-box-shadow: 10px 10px 5px #888;
+        -webkit-box-shadow: 10px 10px 5px #888;
+        box-shadow: 8px 8px 8px #b6b6b6;
+        max-width: 500px;
     }
-    
     .main-photo-info {
-        padding-top: 25px;
         text-align: center;
         margin-bottom: 50px;
+        display:inline-block;
+        float:right;
+        vertical-align: top;
     }
     span {
         font-weight: bold;
