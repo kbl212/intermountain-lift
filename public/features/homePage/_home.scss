@@ -21,11 +21,22 @@ body {
 .home-wrapper {
     #now-hiring {
         padding: 5px;
+        margin-bottom: 50px;
+        
+    }
+    #now-hiring-phrase {
+        color: lawngreen;
+        background-color: #010036;
+        padding: 2px;
+        moz-box-shadow: 10px 10px 5px #888;
+        -webkit-box-shadow: 10px 10px 5px #888;
+        box-shadow: 8px 8px 8px #b6b6b6;
     }
     #intermountain-logo {
         -moz-box-shadow: 10px 10px 5px #888;
         -webkit-box-shadow: 10px 10px 5px #888;
         box-shadow: 8px 8px 8px #b6b6b6;
+        margin-top: 20px;
     }
     .jumbotron {
         text-align: center;
@@ -37,12 +48,13 @@ body {
     img {
         margin-top: 0;
         padding-top: 0;
+        -moz-box-shadow: 10px 10px 5px #888;
+        -webkit-box-shadow: 10px 10px 5px #888;
+        box-shadow: 8px 8px 8px #b6b6b6;
     }
-    
     h2 {
-        border: 1px dotted #010036;
-        width: 600px;
-        margin: 0 auto;
+        width: 100%;
+        text-align: center;
     }
     hr {
         color: #000;
