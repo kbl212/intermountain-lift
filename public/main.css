@@ -57,7 +57,6 @@
       height: 110px;
       margin-top: 0; }
     .navbar-wrapper #second-row li {
-      vertical-align: top;
       margin-top: 10px; }
     .navbar-wrapper #first-row img {
       padding-left: 25px; }
@@ -71,8 +70,10 @@
 
 @media screen and (max-width: 720px) {
   .navbar-wrapper {
-    height: 350px;
+    height: 300px;
     line-height: 50px; }
+    .navbar-wrapper #second-row li {
+      margin-top: 0; }
     .navbar-wrapper #first-row li, .navbar-wrapper #second-row li {
       width: 48%;
       text-align: center;
@@ -567,9 +568,15 @@ body {
     width: 100%;
     text-align: center;
     margin-bottom: 50px; }
+  .contact-wrapper .email-form {
+    position: relative;
+    width: 500px;
+    margin: 0 auto; }
   .contact-wrapper button {
-    margin: 10px auto 10px auto;
-    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px;
     display: block;
     font-weight: bold; }
   .contact-wrapper input {
@@ -593,9 +600,7 @@ body {
 
 @media screen and (max-width: 1230px) {
   .contact-wrapper p {
-    text-indent: 0; }
-  .contact-wrapper button {
-    margin: 0 0 0 13.3%; } }
+    text-indent: 0; } }
 
 @media screen and (max-width: 1060px) {
   .contact-wrapper .company-address {
@@ -616,19 +621,18 @@ body {
       text-align: center; } }
 
 @media screen and (max-width: 600px) {
-  .contact-wrapper .company-address p, .contact-wrapper .sales-and-inquiry p {
+  .contact-wrapper .company-address p,
+  .contact-wrapper .sales-and-inquiry p {
     min-width: 280px;
     max-width: 70%;
     text-align: center; }
-  .contact-wrapper input, .contact-wrapper textarea {
+  .contact-wrapper input,
+  .contact-wrapper textarea {
+    max-width: 70%;
+    min-width: 280px; }
+  .contact-wrapper form {
     max-width: 70%;
     min-width: 280px; }
   .contact-wrapper button {
-    padding-left: 0;
     max-width: 70%;
-    min-width: 280px;
-    margin: 0 0 0 10%; } }
-
-@media screen and (max-width: 460px) {
-  .contact-wrapper button {
-    margin: 0 0 0 2%; } }
+    min-width: 280px; } }

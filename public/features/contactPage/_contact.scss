@@ -54,9 +54,16 @@
         text-align: center;
         margin-bottom: 50px;
     }
+    .email-form {
+        position: relative;
+        width: 500px;
+        margin: 0 auto;
+    }
     button {
-        margin: 10px auto 10px auto;
-        width: 300px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 500px;
         display: block;
         font-weight: bold;
     }
@@ -91,17 +98,14 @@
         p {
             text-indent: 0;
         }
-        button {
-            margin: 0 0 0 13.3%;
-        }
     }
 }
 
 @media screen and (max-width:1060px) {
     .contact-wrapper {
         .company-address {
-            display:block;
-            float:none;
+            display: block;
+            float: none;
             margin: 0 auto;
             width: 90%;
             text-align: center;
@@ -110,8 +114,8 @@
             }
         }
         .sales-and-inquiry {
-            display:block;
-            float:none;
+            display: block;
+            float: none;
             margin: 0 auto;
             width: 90%;
             text-align: center;
@@ -124,28 +128,30 @@
 
 @media screen and (max-width:600px) {
     .contact-wrapper {
-        .company-address p, .sales-and-inquiry p {
+        .company-address p,
+        .sales-and-inquiry p {
             min-width: 280px;
             max-width: 70%;
             text-align: center;
         }
-        input, textarea {
+        input,
+        textarea {
+            max-width: 70%;
+            min-width: 280px;
+        }
+        form {
             max-width: 70%;
             min-width: 280px;
         }
         button {
-            padding-left: 0;
             max-width: 70%;
             min-width: 280px;
-            margin: 0 0 0 10%;
         }
     }
 }
 
 @media screen and (max-width: 460px) {
     .contact-wrapper {
-        button {
-            margin: 0 0 0 2%;
-        }
+        
     }
 }
