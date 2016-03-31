@@ -3,7 +3,7 @@
     .fa-square {
         margin-right: 5px;
     }
-    #customers-title{
+    #customers-title {
         width: 100%;
         text-align: center;
         margin-top: 50px;
@@ -29,6 +29,28 @@
             font-size: 18px;
             list-style-type: none;
             line-height: 40px;
+        }
+    }
+}
+
+//-------------MEDIA QUERIES----------------------
+@media screen and (max-width:1030px) {
+    .customers-wrapper {
+        .customers-row {
+            width: 400px;
+            margin: 0 auto;
+            .amusement {
+                width: 100%;
+            }
+            .transportation {
+                width: 100%;
+            }
+            .industrial {
+                width: 100%;
+            }
+            h2 {
+                width: 310px;
+            }
         }
     }
 }

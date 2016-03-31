@@ -14,3 +14,12 @@
         width: 98%;
     }
 }
+
+@media screen and (max-width:1100px) {
+    .facilities-wrapper {
+        h2 {
+            max-width: 90%;
+            text-align: center;
+        }
+    }
+}

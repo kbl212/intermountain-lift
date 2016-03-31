@@ -204,7 +204,6 @@ body {
     height: 40px; } }
 
 .history-wrapper {
-  position: absolute;
   width: 100%;
   font-size: 18px; }
   .history-wrapper p {
@@ -219,10 +218,27 @@ body {
     font-weight: bold;
     line-height: 20px;
     display: inline-block;
-    padding-left: 20px; }
+    padding-left: 20px;
+    margin-top: 50px; }
   .history-wrapper img {
+    vertical-align: top; }
+  .history-wrapper .image-container {
     display: inline-block;
     vertical-align: top; }
+
+@media screen and (max-width: 1360px) {
+  .history-wrapper h2 {
+    max-width: 90%;
+    text-align: center; }
+  .history-wrapper .image-container {
+    width: 100%;
+    text-align: center; }
+  .history-wrapper #staff-list {
+    width: 400px;
+    margin: 50px auto 0 auto;
+    display: block; }
+  .history-wrapper img {
+    max-width: 90%; } }
 
 .quality-wrapper {
   font-size: 18px; }
@@ -247,6 +263,11 @@ body {
   .quality-wrapper .fa-square {
     margin-right: 5px; }
 
+@media screen and (max-width: 1100px) {
+  .quality-wrapper h2 {
+    max-width: 90%;
+    text-align: center; } }
+
 .facilities-wrapper {
   font-size: 18px;
   line-height: 30px; }
@@ -257,6 +278,11 @@ body {
     width: 200px; }
   .facilities-wrapper img {
     width: 98%; }
+
+@media screen and (max-width: 1100px) {
+  .facilities-wrapper h2 {
+    max-width: 90%;
+    text-align: center; } }
 
 .equipment-wrapper {
   font-size: 18px;
@@ -310,6 +336,13 @@ body {
 .active-equipment {
   background-color: #010036; }
 
+@media screen and (max-width: 1100px) {
+  .equipment-wrapper h2 {
+    max-width: 90%;
+    text-align: center; }
+  .equipment-wrapper .main-equipment-image {
+    max-width: 90%; } }
+
 .customers-wrapper {
   width: 100%; }
   .customers-wrapper .fa-square {
@@ -335,6 +368,19 @@ body {
     font-size: 18px;
     list-style-type: none;
     line-height: 40px; }
+
+@media screen and (max-width: 1030px) {
+  .customers-wrapper .customers-row {
+    width: 400px;
+    margin: 0 auto; }
+    .customers-wrapper .customers-row .amusement {
+      width: 100%; }
+    .customers-wrapper .customers-row .transportation {
+      width: 100%; }
+    .customers-wrapper .customers-row .industrial {
+      width: 100%; }
+    .customers-wrapper .customers-row h2 {
+      width: 310px; } }
 
 .employment-wrapper {
   line-height: 30px; }

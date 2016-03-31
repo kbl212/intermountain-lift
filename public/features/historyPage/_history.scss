@@ -1,5 +1,4 @@
 .history-wrapper {
-    position: absolute;
     width: 100%;
     font-size: 18px;
     p {
@@ -18,9 +17,35 @@
         line-height: 20px;
         display: inline-block;
         padding-left: 20px;
+        margin-top: 50px;
     }
     img {
+        vertical-align: top;
+    }
+    .image-container {
         display: inline-block;
         vertical-align: top;
+    }
+}
+
+//----------------MEDIA QUERIES----------------
+@media screen and (max-width: 1360px) {
+    .history-wrapper {
+        h2 {
+            max-width: 90%;
+            text-align: center;
+        }
+        .image-container {
+            width: 100%;
+            text-align: center;
+        }
+        #staff-list {
+            width: 400px;
+            margin: 50px auto 0 auto;
+            display: block;
+        }
+        img {
+            max-width: 90%;
+        }
     }
 }

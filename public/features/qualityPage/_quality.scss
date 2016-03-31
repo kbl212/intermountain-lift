@@ -35,3 +35,14 @@
         margin-right: 5px;
     }
 }
+
+//-------------------MEDIA QUERIES------------------------
+
+@media screen and (max-width: 1100px) {
+    .quality-wrapper {
+        h2 {
+            max-width: 90%;
+            text-align: center;
+        }
+    }
+}
