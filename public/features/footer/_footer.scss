@@ -26,11 +26,9 @@
         height: 20px;
         width: 100%;
         text-align: center;
-        
         a {
             text-decoration: underline;
         }
-        
     }
     li {
         display: inline;
@@ -45,5 +43,28 @@
     }
     a:focus {
         text-decoration: none;
+    }
+}
+
+//------------------MEDIA QUERIES--------------------
+@media screen and (max-width:760px) {
+    .myfooter-wrapper {
+        height: 500px;
+        .myfooter-container {
+            height:390px;
+        }
+        .myfooter-container ul {
+            height: 380px;
+        }
+        
+        li {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            line-height: 40px;
+        }
+        .footer-info {
+            bottom: -10px;
+        }
     }
 }

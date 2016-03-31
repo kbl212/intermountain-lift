@@ -1,35 +1,59 @@
-.nav-wrapper {
+.navbar-wrapper {
     background-color: #010036;
     height: 60px;
-    width: 100%;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     font-size: 18px;
+    
     .navbar-container {
         width: 100%;
-        text-align: center;
+        margin: 0 auto;
     }
-    .navbar-container ul {
+    .navbar-container ul{
         position: absolute;
         top: 50%;
-        text-align: center;
-        width: 100%;
+        left: 0%;
         height: 50px;
-        margin-top: -10px;
-    }
-    li {
-        color: #fff;
+        margin-top: -25px;
         display: inline;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
+        width: 100%;
     }
     img {
-        height: 40px;
-        width: 200px;
-        margin-top: -10px;
+        height:50px;
+        max-width: 300px;
+    }
+    
+    #first-row li {
+        color: #fff;
+        width: 9.5%;
+        text-align: right;
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #first-row, #second-row {
+        display: inline;
+    }
+    #first-row {
+        a {
+            padding-left: 5px;
+        }
+    }
+    #second-row li {
+        color: #fff;
+        width: 9.5%;
+        text-align: right;
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     a {
-        display: inline;
+        display: inline-block;
         color: #fff;
     }
     a:hover {
@@ -38,35 +62,55 @@
     a:focus {
         text-decoration: none;
     }
-    #second-row {
-        display: inline;
-    }
-    #first-row {
-        display: inline;
-    }
 }
 
 //-----------MEDIA QUERIES-------------------------
-@media screen and (max-width:1900px) {
-    .nav-wrapper {
+@media screen and (max-width:1650px) {
+    .navbar-wrapper {
         height: 120px;
-        #first-row {
-            display: block;
-            margin-right: 2%;
-        }
-        #second-row {
-            display: block;
-            margin-top: 40px;
-        }
+        
         .navbar-container ul {
             top: 10%;
+            height:110px;
             margin-top: 0;
         }
         
-        li {
-            margin-left: 5%;
-            margin-right: 5%;
+        #second-row li{
+            vertical-align: top;
+            margin-top: 10px;
+        }
+        #first-row img {
+            padding-left: 25px;
+        }
+        
+        #first-row li, #second-row li{
+            width:19%;
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+    .navbar-wrapper {
+        #first-row img {
+            padding-left:0;
+            height: 40px;
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+    .navbar-wrapper {
+        height:350px;
+        line-height: 50px;
+        
+        #first-row {
             
+        }
+        
+        #first-row li, #second-row li {
+            width: 48%;
+            text-align: center;
+            padding-left: 10px;
         }
     }
 }

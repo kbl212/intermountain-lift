@@ -124,9 +124,28 @@
 
 @media screen and (max-width:600px) {
     .contact-wrapper {
+        .company-address p, .sales-and-inquiry p {
+            min-width: 280px;
+            max-width: 70%;
+            text-align: center;
+        }
         input, textarea {
-            max-width: 80%;
-            min-width: 320px;
+            max-width: 70%;
+            min-width: 280px;
+        }
+        button {
+            padding-left: 0;
+            max-width: 70%;
+            min-width: 280px;
+            margin: 0 0 0 10%;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .contact-wrapper {
+        button {
+            margin: 0 0 0 2%;
         }
     }
 }
