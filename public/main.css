@@ -148,6 +148,9 @@ body {
 .home-wrapper button:focus {
   color: #fff; }
 
+.home-wrapper a:hover {
+  text-decoration: none; }
+
 .history-wrapper {
   position: absolute;
   width: 100%;
@@ -372,8 +375,8 @@ body {
     margin-top: 50px;
     margin-bottom: 50px; }
   .contact-wrapper h3 {
-    width: 400px;
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
     text-decoration: underline; }
   .contact-wrapper p {
     width: 400px;
@@ -391,3 +394,30 @@ body {
     vertical-align: top;
     width: 30%;
     display: inline-block; }
+  .contact-wrapper form {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px; }
+  .contact-wrapper button {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold; }
+  .contact-wrapper input {
+    margin: 10px auto 10px auto;
+    width: 500px;
+    padding-left: 5px; }
+  .contact-wrapper #message-box {
+    height: 400px;
+    resize: none;
+    width: 500px;
+    margin-top: 10px;
+    padding-left: 5px; }
+  .contact-wrapper .fa-times {
+    font-size: 24px;
+    color: red; }
+  .contact-wrapper .fa-check-circle {
+    font-size: 24px;
+    color: green; }
+  .contact-wrapper .fa {
+    margin-left: 5px; }
