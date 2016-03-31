@@ -31,6 +31,26 @@
     text-decoration: none; }
   .nav-wrapper a:focus {
     text-decoration: none; }
+  .nav-wrapper #second-row {
+    display: inline; }
+  .nav-wrapper #first-row {
+    display: inline; }
+
+@media screen and (max-width: 1900px) {
+  .nav-wrapper {
+    height: 120px; }
+    .nav-wrapper #first-row {
+      display: block;
+      margin-right: 2%; }
+    .nav-wrapper #second-row {
+      display: block;
+      margin-top: 40px; }
+    .nav-wrapper .navbar-container ul {
+      top: 10%;
+      margin-top: 0; }
+    .nav-wrapper li {
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 .myfooter-wrapper {
   background-color: #010036;
@@ -150,6 +170,38 @@ body {
 
 .home-wrapper a:hover {
   text-decoration: none; }
+
+@media screen and (max-width: 1360px) {
+  .home-wrapper #iml-building {
+    height: 300px; } }
+
+@media screen and (max-width: 1190px) {
+  .home-wrapper #iml-building {
+    height: 200px; } }
+
+@media screen and (max-width: 950px) {
+  .home-wrapper #iml-building {
+    height: 150px; }
+  .home-wrapper button {
+    height: 100px;
+    width: 250px;
+    font-size: 18px; }
+  .home-wrapper #intermountain-logo {
+    height: 50px; }
+  .home-wrapper p, .home-wrapper h2 {
+    font-size: 18px; } }
+
+@media screen and (max-width: 630px) {
+  .home-wrapper #iml-building {
+    height: 100px; }
+  .home-wrapper #now-hiring {
+    line-height: 30px; } }
+
+@media screen and (max-width: 420px) {
+  .home-wrapper #iml-building {
+    height: 80px; }
+  .home-wrapper #intermountain-logo {
+    height: 40px; } }
 
 .history-wrapper {
   position: absolute;
@@ -328,7 +380,8 @@ body {
     padding-bottom: 25px;
     display: inline-block;
     width: 45%;
-    vertical-align: top; }
+    vertical-align: top;
+    float: right; }
   .all-work-wrapper .all-work-thumb {
     height: 85px;
     width: 85px;
@@ -358,13 +411,28 @@ body {
     text-align: center;
     margin-bottom: 50px;
     display: inline-block;
-    float: right;
+    float: left;
     vertical-align: top; }
   .all-work-wrapper span {
     font-weight: bold; }
 
 .active-work {
   background-color: #010036; }
+
+@media screen and (max-width: 1030px) {
+  .all-work-wrapper .work-body {
+    width: 100%;
+    float: none; }
+  .all-work-wrapper .main-photo-info {
+    width: 100%;
+    text-align: center;
+    float: none; }
+  .all-work-wrapper .all-photos {
+    width: 100%; } }
+
+@media screen and (max-width: 660px) {
+  .all-work-wrapper .main-image {
+    max-width: 250px; } }
 
 .contact-wrapper {
   font-size: 18px;
@@ -385,15 +453,20 @@ body {
     height: 270px;
     width: 35%;
     display: inline-block;
-    margin-right: 4%; }
+    margin-right: 4%;
+    margin-top: 20px; }
   .contact-wrapper .company-address {
     vertical-align: top;
-    width: 20%;
+    width: 30%;
     display: inline-block; }
+    .contact-wrapper .company-address h3 {
+      text-align: left; }
   .contact-wrapper .sales-and-inquiry {
     vertical-align: top;
     width: 30%;
     display: inline-block; }
+    .contact-wrapper .sales-and-inquiry h3 {
+      text-align: left; }
   .contact-wrapper form {
     width: 100%;
     text-align: center;
@@ -401,7 +474,7 @@ body {
   .contact-wrapper button {
     width: 500px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 0 305px;
     font-weight: bold; }
   .contact-wrapper input {
     margin: 10px auto 10px auto;
@@ -421,3 +494,15 @@ body {
     color: green; }
   .contact-wrapper .fa {
     margin-left: 5px; }
+
+@media screen and (max-width: 1250px) {
+  .contact-wrapper .sales-and-inquiry {
+    width: 700px;
+    margin: 0 auto; }
+  .contact-wrapper .company-address {
+    width: 700px;
+    margin: 0 auto; }
+  .contact-wrapper .address-row {
+    width: 500px; }
+  .contact-wrapper #map {
+    width: 300px; } }

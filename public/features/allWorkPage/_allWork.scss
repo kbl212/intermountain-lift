@@ -17,9 +17,10 @@
     .work-body {
         text-align: center;
         padding-bottom: 25px;
-        display:inline-block;
+        display: inline-block;
         width: 45%;
         vertical-align: top;
+        float: right;
     }
     .all-work-thumb {
         height: 85px;
@@ -55,8 +56,8 @@
     .main-photo-info {
         text-align: center;
         margin-bottom: 50px;
-        display:inline-block;
-        float:right;
+        display: inline-block;
+        float: left;
         vertical-align: top;
     }
     span {
@@ -66,4 +67,30 @@
 
 .active-work {
     background-color: #010036;
+}
+
+//-------------------------MEDIA QUERIES----------------------
+@media screen and (max-width:1030px) {
+    .all-work-wrapper {
+        .work-body {
+            width: 100%;
+            float: none;
+        }
+        .main-photo-info {
+            width: 100%;
+            text-align: center;
+            float: none;
+        }
+        .all-photos {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .all-work-wrapper {
+        .main-image {
+            max-width: 250px;
+        }
+    }
 }

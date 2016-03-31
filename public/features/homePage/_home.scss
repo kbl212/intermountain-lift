@@ -86,3 +86,63 @@ body {
         text-decoration: none;
     }
 }
+
+//--------------MEDIA QUERIES--------------------------
+
+@media screen and (max-width:1360px) {
+    .home-wrapper {
+        #iml-building {
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .home-wrapper {
+        #iml-building {
+            height: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    
+    .home-wrapper {
+        #iml-building {
+            height: 150px;
+        }
+        button {
+            height: 100px;
+            width: 250px;
+            font-size: 18px;
+        }
+        #intermountain-logo {
+            height: 50px;
+        }
+        p, h2 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .home-wrapper {
+        #iml-building {
+            height: 100px;
+        }
+        #now-hiring {
+            line-height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .home-wrapper {
+        #iml-building {
+            height: 80px;
+        }
+        #intermountain-logo {
+            height: 40px;
+        }
+    }
+}

@@ -5,12 +5,10 @@
     position: relative;
     overflow: hidden;
     font-size: 18px;
-    
     .navbar-container {
         width: 100%;
-        text-align:center;
+        text-align: center;
     }
-    
     .navbar-container ul {
         position: absolute;
         top: 50%;
@@ -19,30 +17,56 @@
         height: 50px;
         margin-top: -10px;
     }
-    
     li {
         color: #fff;
         display: inline;
         margin-left: 2.5%;
         margin-right: 2.5%;
     }
-    
     img {
         height: 40px;
         width: 200px;
         margin-top: -10px;
     }
-    
     a {
         display: inline;
         color: #fff;
     }
-    
     a:hover {
         text-decoration: none;
     }
-    
     a:focus {
         text-decoration: none;
+    }
+    #second-row {
+        display: inline;
+    }
+    #first-row {
+        display: inline;
+    }
+}
+
+//-----------MEDIA QUERIES-------------------------
+@media screen and (max-width:1900px) {
+    .nav-wrapper {
+        height: 120px;
+        #first-row {
+            display: block;
+            margin-right: 2%;
+        }
+        #second-row {
+            display: block;
+            margin-top: 40px;
+        }
+        .navbar-container ul {
+            top: 10%;
+            margin-top: 0;
+        }
+        
+        li {
+            margin-left: 5%;
+            margin-right: 5%;
+            
+        }
     }
 }
