@@ -216,8 +216,7 @@ body {
     filter: blur(0);
     -webkit-filter: blur(0); }
   .equipment-wrapper .equipment-thumbs {
-    padding-bottom: 10px;
-    border-bottom: 1px dotted #000; }
+    padding-bottom: 10px; }
   .equipment-wrapper #main-img-title {
     margin-top: 0;
     margin-bottom: 0;

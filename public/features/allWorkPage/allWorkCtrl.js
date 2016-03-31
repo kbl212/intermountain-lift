@@ -188,7 +188,7 @@ app.controller('allWorkCtrl', function ($scope, allWorkService) {
             placeName: "Silver Dollar City",
             location: "Branson, Missouri",
             company: "ARROW DYNAMICS INC.",
-            image: "../../images/allamusements/thunderation.jpg"
+            image: "../../images/allamusements/thunderation1.jpg"
         }
 
     ];
