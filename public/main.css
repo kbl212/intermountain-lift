@@ -580,8 +580,8 @@ body {
     margin: 0 auto; }
   .contact-wrapper button {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -30px;
+    left: 3px;
     width: 465px;
     display: block;
     font-weight: bold; }
@@ -644,5 +644,5 @@ body {
     max-width: 70%;
     min-width: 280px; }
   .contact-wrapper button {
-    max-width: 70%;
+    max-width: 65%;
     min-width: 280px; } }
