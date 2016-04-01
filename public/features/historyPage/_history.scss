@@ -52,3 +52,11 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .history-wrapper {
+        #staff-list {
+            width: 200px;
+        }
+    }
+}
