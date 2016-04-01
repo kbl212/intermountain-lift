@@ -1,7 +1,7 @@
 var app = angular.module('intermountain-lift');
 
 
-app.controller('contactCtrl', function ($scope) {
+app.controller('contactCtrl', function ($scope, contactService, $http) {
 
     $scope.initMap = function () {
         var myLatLng = {
@@ -31,21 +31,44 @@ app.controller('contactCtrl', function ($scope) {
         return returnVal;
     }
 
-    $scope.emailSubmit = function() {
-        console.log('HERE');
+
+
+
+
+
+    $scope.sendEmail = function (emailObj) {
+        $http({
+            method: "POST",
+            url: "/send_mail.php",
+            data: {
+                emailObj
+            }
+        }).success(function (result) {
+            console.log('SUCCESS', result);
+        }).error(function (result) {
+            console.log('failure...');
+        })
+    }
+
+    $scope.emailSubmit = function () {
         if ($scope.emailName && $scope.isValidEmail && $scope.emailSubject && $scope.emailMessage) {
-            alert("SUCCESS!");
-        }
-        else if (!$scope.isValidEmail) {
+            var emailObj = {
+                clientName: $scope.emailName,
+                email: $scope.emailAddress,
+                subject: $scope.emailSubject,
+                message: $scope.emailMessage
+            }
+            $scope.sendEmail(emailObj);
+        } else if (!$scope.isValidEmail) {
             alert("Please enter a valid email address");
-        }
-        else {
+        } else {
             alert("Please fill out all required fields");
         }
-        $scope.emailName="";
-        $scope.emailAddress="";
-        $scope.emailSubject="";
-        $scope.emailMessage="";
+        $scope.emailName = "";
+        $scope.emailAddress = "";
+        $scope.emailSubject = "";
+        $scope.emailMessage = "";
         $scope.isValidEmail = false;
+
     }
 });

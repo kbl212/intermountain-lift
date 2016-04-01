@@ -582,25 +582,29 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 500px;
+    width: 475px;
     display: block;
     font-weight: bold; }
   .contact-wrapper input {
     margin: 10px auto 10px auto;
-    width: 500px;
+    width: 475px;
     padding-left: 5px; }
   .contact-wrapper #message-box {
     height: 400px;
     resize: none;
-    width: 500px;
+    width: 475px;
     margin-top: 10px;
     padding-left: 5px; }
   .contact-wrapper .fa-times {
     font-size: 24px;
-    color: red; }
+    color: red;
+    vertical-align: top;
+    padding-top: 10px; }
   .contact-wrapper .fa-check-circle {
     font-size: 24px;
-    color: green; }
+    color: green;
+    vertical-align: top;
+    padding-top: 10px; }
   .contact-wrapper .fa {
     margin-left: 5px; }
 
