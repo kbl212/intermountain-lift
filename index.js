@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-app.use(cors({origin: 'http://localhost:3000'}, {origin:'http://lauritzentest.herokuapp.com'}));
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
