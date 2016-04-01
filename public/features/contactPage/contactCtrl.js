@@ -36,12 +36,15 @@ app.controller('contactCtrl', function ($scope, contactService, $http) {
 
 
 
-    $scope.sendEmail = function (emailObj) {
+    $scope.sendEmail = function () {
         $http({
             method: "POST",
-            url: "http://lauritzentest.herokuapp.com/intermountain-lift/send_mail.php",
+            url: "/send_mail.php",
             data: {
-                emailObj
+                clientName: $scope.emailName,
+                email: $scope.emailSubject,
+                subject: $scope.emailSubject,
+                message: $scope.emailMessage
             }
         }).success(function (result) {
             console.log('SUCCESS', result);
@@ -52,13 +55,7 @@ app.controller('contactCtrl', function ($scope, contactService, $http) {
 
     $scope.emailSubmit = function () {
         if ($scope.emailName && $scope.isValidEmail && $scope.emailSubject && $scope.emailMessage) {
-            var emailObj = {
-                clientName: $scope.emailName,
-                email: $scope.emailAddress,
-                subject: $scope.emailSubject,
-                message: $scope.emailMessage
-            }
-            $scope.sendEmail(emailObj);
+            $scope.sendEmail();
         } else if (!$scope.isValidEmail) {
             alert("Please enter a valid email address");
         } else {

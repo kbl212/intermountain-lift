@@ -63,19 +63,19 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 475px;
+        width: 465px;
         display: block;
         font-weight: bold;
     }
     input {
         margin: 10px auto 10px auto;
-        width: 475px;
+        width: 465px;
         padding-left: 5px;
     }
     #message-box {
         height: 400px;
         resize: none;
-        width: 475px;
+        width: 465px;
         margin-top: 10px;
         padding-left: 5px;
     }
@@ -133,7 +133,7 @@
 @media screen and (max-width:600px) {
     .contact-wrapper {
         .company-address p,
-        .sales-and-inquiry p {
+        .sales-and-inquiry p, h3 {
             min-width: 280px;
             max-width: 70%;
             text-align: center;
