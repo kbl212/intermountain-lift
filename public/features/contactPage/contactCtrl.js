@@ -39,7 +39,7 @@ app.controller('contactCtrl', function ($scope, contactService, $http) {
     $scope.sendEmail = function (emailObj) {
         $http({
             method: "POST",
-            url: "http://lauritzentest.herokuapp.com/send_mail.php",
+            url: "http://lauritzentest.herokuapp.com/intermountain-lift/send_mail.php",
             data: {
                 emailObj
             }
