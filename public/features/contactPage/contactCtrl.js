@@ -31,27 +31,24 @@ app.controller('contactCtrl', function ($scope, contactService, $http) {
         return returnVal;
     }
 
-
-
-
-
-
     $scope.sendEmail = function () {
         $http({
             method: "POST",
-            url: "/send_mail.php",
+            url: "http://www.lauritzentest.herokuapp.com/php/send_mail.php",
             data: {
                 clientName: $scope.emailName,
                 email: $scope.emailSubject,
                 subject: $scope.emailSubject,
                 message: $scope.emailMessage
-            }
+            },
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
         }).success(function (result) {
             console.log('SUCCESS', result);
         }).error(function (result) {
             console.log('failure...');
         })
-    }
+        
+    };
 
     $scope.emailSubmit = function () {
         if ($scope.emailName && $scope.isValidEmail && $scope.emailSubject && $scope.emailMessage) {
