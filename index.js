@@ -4,11 +4,10 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-app.use(cors());
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'http://lauritzentest.herokuapp.com');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -23,9 +22,12 @@ app.use(function (req, res, next) {
     // Pass to next layer of middleware
     next();
 });
-app.use(bodyParser.json());
 
+app.use(cors());
+app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
+
+
 
 
 var port = process.env.PORT || 3000;
