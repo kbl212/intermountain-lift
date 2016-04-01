@@ -632,17 +632,49 @@ body {
 
 @media screen and (max-width: 600px) {
   .contact-wrapper .company-address p,
-  .contact-wrapper .sales-and-inquiry p, .contact-wrapper h3 {
+  .contact-wrapper .sales-and-inquiry p {
     min-width: 280px;
     max-width: 70%;
     text-align: center; }
+  .contact-wrapper h3 {
+    text-align: center;
+    min-width: 280px;
+    max-width: 70%;
+    padding-left: 100px; }
   .contact-wrapper input,
   .contact-wrapper textarea {
     max-width: 70%;
     min-width: 280px; }
   .contact-wrapper form {
     max-width: 70%;
-    min-width: 280px; }
+    min-width: 280px;
+    margin-left: 15%; }
   .contact-wrapper button {
     max-width: 65%;
-    min-width: 280px; } }
+    min-width: 280px;
+    left: 75px; }
+  .contact-wrapper #emailus-title {
+    width: 180px;
+    padding-left: 180px; } }
+
+@media screen and (max-width: 480px) {
+  .contact-wrapper button {
+    left: 3%; } }
+
+@media screen and (max-width: 480px) {
+  .contact-wrapper h3 {
+    padding-left: 10%;
+    text-align: center; }
+  .contact-wrapper #emailus-title {
+    padding-left: 90px; }
+  .contact-wrapper form {
+    margin-left: 5%; } }
+
+@media screen and (max-width: 400) {
+  .contact-wrapper #emailus-title {
+    padding-left: 0; }
+  .contact-wrapper .email-form {
+    margin-left: 0;
+    padding-left: 0; }
+  .contact-wrapper input, .contact-wrapper textarea {
+    margin-left: 0; } }
