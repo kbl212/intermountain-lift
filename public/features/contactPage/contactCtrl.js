@@ -34,7 +34,7 @@ app.controller('contactCtrl', function ($scope, contactService, $http) {
     $scope.sendEmail = function () {
         $http({
             method: "POST",
-            url: "http://tagvar.com/kyle/php/send_mail.php",
+            url: "/php/send_mail.php",
             data: {
                 clientName: $scope.emailName,
                 email: $scope.emailSubject,
