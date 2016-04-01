@@ -132,6 +132,7 @@
 
 @media screen and (max-width:600px) {
     .contact-wrapper {
+        overflow-x: hidden;
         .company-address p,
         .sales-and-inquiry p {
             min-width: 280px;
@@ -163,15 +164,13 @@
             width: 180px;
             padding-left: 180px;
         }
-    }
-}
-@media screen and (max-width: 480px) {
-    .contact-wrapper {
-        button {
-            left: 3%;
+        .email-form {
+            width: 500px;
+            overflow-x: none;
         }
     }
 }
+
 @media screen and (max-width: 480px) {
     .contact-wrapper {
         h3 {
@@ -184,10 +183,13 @@
         form {
             margin-left: 5%;
         }
+        button {
+            left: 3%;
+        }
     }
 }
 
-@media screen and (max-width: 400) {
+@media screen and (max-width: 420px) {
     .contact-wrapper {
         #emailus-title {
             padding-left: 0;
@@ -195,10 +197,16 @@
         .email-form {
             margin-left: 0;
             padding-left: 0;
+            width:300px;
         }
         
-        input, textarea {
-            margin-left: 0;
+        button {
+            left: 5%;
+        }
+        
+        input, textarea, button {
+            max-width: 250px;
+            min-width: 100px;
         }
     }
 }
